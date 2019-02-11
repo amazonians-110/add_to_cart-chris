@@ -1,0 +1,35 @@
+.container{
+	position : relative;
+	top : 100px;
+	display : flex;
+	width : 200px;
+	height : 500px; 
+	flex-direction : column;
+	background-color : white;
+	float : right;
+	border: 1px #D3D3D3 solid;
+	padding: 10px 20px; 
+
+}
+
+.price{
+	color : #B12704;
+	font-size: 17px;
+}
+
+.freeshipping{
+	margin-top : 10px;
+	font-size : 13px;
+	line-height : 1.6;
+}
+
+
+.details{
+   color :#0066c0;
+}
+
+.details:hover{
+  color :  #B12704;
+  cursor : pointer;
+}
+
