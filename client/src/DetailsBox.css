@@ -22,7 +22,7 @@
      width : 350px;
      bottom : 125%;
      background-color: white;
-     right : 0;
+     right : -15px;
      padding-right : 10px;
      padding-left : 10px;
  }
@@ -34,17 +34,17 @@
     border-width: 5px; 
     border-style: solid;
     border-color: black transparent transparent transparent;
-    left : 95%;
+    left : 90%;
  }
 
  .message:after{
     content : '';
     position : absolute;
     top: 100%;
-    border-width: 4.75px; 
+    border-width: 4.5px; 
     border-style: solid;
     border-color: white transparent transparent transparent;
-    left : 95%;
+    left : 90%;
  }
 
 
