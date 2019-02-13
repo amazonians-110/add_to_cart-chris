@@ -1,3 +1,21 @@
 .bold{
     font-weight : bold;
 }
+
+.expectedDates{
+    margin-top : 5px;
+}
+.oneDay{
+    margin-top: 15px;
+}
+
+.oneDayShipping{
+    color :  #555;
+    font-weight : bold;
+}
+
+.stock{
+    margin-top : 15px;
+    color : #008a00;
+    font-size : 17px;
+}

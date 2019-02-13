@@ -37,8 +37,11 @@ class Dates extends React.Component {
     let actualMonth = months[month];
     let actualWeekday = daysOfWeek[weekday];
     let fourDaysLater = daysOfWeek[weekday + 4];
+    let hour = date.getHours();
+    let minutes = date.getMinutes();
     return (
-      <div className="month">
+    <div className="expectedDates">
+      <div className="free">
         <span className="bold">Get it {actualWeekday}, {actualMonth} {dayNumber} - {fourDaysLater}, {actualMonth} {dayNumber + 4}</span>
             if you choose 
             {' '}
@@ -46,6 +49,14 @@ class Dates extends React.Component {
             {' '}
             at checkout, or
       </div>
+      
+      <div className="oneDay">
+      <span className="bold">Get it Tomorrow, {actualMonth} {dayNumber + 1} </span> <span className="sameDay">if you order within {24 - hour} hrs {60 - minutes} mins and choose paid</span> 
+      <span className="oneDayShipping"> One-Day Shipping</span><span className="sameDay"> at checkout </span> 
+      </div>        
+      
+      <div className="stock">In Stock.</div>
+    </div>
     );
   }
 }
