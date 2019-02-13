@@ -10,34 +10,15 @@ exports[`Dates Component should render 1`] = `
     <span
       className="bold"
     >
-      Get it
-       
-      Wed
-      ,
-       
-      Feb
-       
-      13
-       
-      -
-       
-      Sun
-      ,
-       
-      Feb
-       
-      17
+       Get it Wed, Feb 13 - Sun, Feb 17 
     </span>
-     
-    if you choose
-     
+     if you choose 
     <span
       className="bold"
     >
-       FREE Shipping
+      FREE Shipping
     </span>
-     
-    at checkout, or
+     at checkout, or
   </div>
   <div
     className="oneDay"
@@ -45,27 +26,12 @@ exports[`Dates Component should render 1`] = `
     <span
       className="bold"
     >
-      Get it Tomorrow,
-       
-      Feb
-       
-      14
-       
+       Get it Tomorrow, Feb 14
     </span>
-     
     <span
       className="sameDay"
     >
-       
-      if you order within
-       
-      14
-       
-      hrs
-       
-      45
-       
-      mins and choose paid
+       if you order within 9 hrs 29 mins and choose paid 
     </span>
     <span
       className="oneDayShipping"
@@ -81,7 +47,17 @@ exports[`Dates Component should render 1`] = `
   <div
     className="stock"
   >
-    In Stock.
+    <span
+      className="available"
+    >
+       In Stock. 
+      <br />
+    </span>
+    <span
+      className="location"
+    >
+       Ships from and sold by Amazon.com 
+    </span>
   </div>
 </div>
 `;
