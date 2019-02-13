@@ -14,6 +14,13 @@
     "react-dev": "webpack -d --watch"
   },
   "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "setupFilesAfterEnv": [
       "./client/src/setupTests.js"
     ],
@@ -21,6 +28,7 @@
       "\\.css$": "identity-obj-proxy"
     },
     "transform": {
+      "\\.js$": "babel-jest",
       "\\.jsx$": "babel-jest"
     }
   },
