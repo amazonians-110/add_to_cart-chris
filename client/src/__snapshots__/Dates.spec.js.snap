@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dates Component should render 1`] = `
+<div
+  className="expectedDates"
+>
+  <div
+    className="free"
+  >
+    <span
+      className="bold"
+    >
+      Get it
+       
+      Wed
+      ,
+       
+      Feb
+       
+      13
+       
+      -
+       
+      Sun
+      ,
+       
+      Feb
+       
+      17
+    </span>
+     
+    if you choose
+     
+    <span
+      className="bold"
+    >
+       FREE Shipping
+    </span>
+     
+    at checkout, or
+  </div>
+  <div
+    className="oneDay"
+  >
+    <span
+      className="bold"
+    >
+      Get it Tomorrow,
+       
+      Feb
+       
+      14
+       
+    </span>
+     
+    <span
+      className="sameDay"
+    >
+       
+      if you order within
+       
+      14
+       
+      hrs
+       
+      45
+       
+      mins and choose paid
+    </span>
+    <span
+      className="oneDayShipping"
+    >
+       One-Day Shipping
+    </span>
+    <span
+      className="sameDay"
+    >
+       at checkout 
+    </span>
+  </div>
+  <div
+    className="stock"
+  >
+    In Stock.
+  </div>
+</div>
+`;

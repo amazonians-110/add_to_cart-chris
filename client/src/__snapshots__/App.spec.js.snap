@@ -25,6 +25,7 @@ exports[`App Component should render 1`] = `
       on orders over $25 shipped by Amazon.
        
       <DetailsBox />
+      <Dates />
     </div>
   </div>
 </div>

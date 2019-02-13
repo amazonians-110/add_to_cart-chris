@@ -41,7 +41,7 @@ class DetailsBox extends React.Component {
     let message;
     if (clicked) {
       message = (
-        <div className="message" role="button" onClick={this.hideBorder}>
+        <div className="message" onClick={this.hideBorder}>
           <p>
             {' '}
             <div className="shipping">
@@ -64,6 +64,7 @@ class DetailsBox extends React.Component {
     return (
       <div className="tooltip">
         <span className="details" onClick={this.showMessage}>Details</span>
+        <img className="arrow" src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/amazonarrow.png" alt="drop down arrow" />
         {message}
       </div>
     );
