@@ -2,7 +2,7 @@ import React from 'react';
 import CSSModules from 'react-css-modules';
 import './App.css';
 import DetailsBox from './DetailsBox.jsx';
-
+import Dates from './Dates.jsx';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -32,6 +32,7 @@ class App extends React.Component {
             on orders over $25 shipped by Amazon.
             {' '}
             <DetailsBox ref={this.child} />
+            <Dates />
           </div>
         </div>
       </div>
