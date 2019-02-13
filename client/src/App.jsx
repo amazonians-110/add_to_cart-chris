@@ -3,6 +3,8 @@ import CSSModules from 'react-css-modules';
 import './App.css';
 import DetailsBox from './DetailsBox.jsx';
 import Dates from './Dates.jsx';
+import Buttons from './Buttons.jsx';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -33,6 +35,7 @@ class App extends React.Component {
             {' '}
             <DetailsBox ref={this.child} />
             <Dates />
+            <Buttons />
           </div>
         </div>
       </div>

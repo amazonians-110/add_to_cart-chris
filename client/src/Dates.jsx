@@ -65,7 +65,15 @@ const Dates = () => {
         <span className="oneDayShipping"> One-Day Shipping</span>
         <span className="sameDay"> at checkout </span>
       </div>
-      <div className="stock">In Stock.</div>
+      <div className="stock">
+        <span className="available">
+          {' In Stock. '} 
+          <br />
+        </span>
+        <span className="location"> 
+          {' Ships from and sold by Amazon.com '}
+        </span>
+      </div>
     </div>
   );
 };
