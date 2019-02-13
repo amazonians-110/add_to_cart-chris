@@ -46,53 +46,21 @@ const Dates = () => {
     <div className="expectedDates">
       <div className="free">
         <span className="bold">
-          Get it
-          {' '}
-          {actualWeekday}
-          ,
-          {' '}
-          {actualMonth}
-          {' '}
-          {dayNumber}
-          {' '}
-           -
-          {' '}
-          {fourDaysLater}
-          ,
-          {' '}
-          {actualMonth}
-          {' '}
-          {dayNumber + 4}
+          {` Get it ${actualWeekday}, ${actualMonth} ${dayNumber} - ${fourDaysLater}, ${actualMonth} ${dayNumber + 4} `}
         </span>
-        {' '}
-        if you choose
-        {' '}
-        <span className="bold"> FREE Shipping</span>
-        {' '}
-            at checkout, or
+        {' if you choose '}
+        <span className="bold"> 
+          {'FREE Shipping'}
+        </span>
+        {' at checkout, or'}
       </div>
 
       <div className="oneDay">
         <span className="bold">
-        Get it Tomorrow,
-          {' '}
-          {actualMonth}
-          {' '}
-          {dayNumber + 1}
-          {' '}
+          {` Get it Tomorrow, ${actualMonth} ${dayNumber + 1}`}
         </span>
-        {' '}
         <span className="sameDay">
-          {' '}
-          if you order within
-          {' '}
-          {24 - hour}
-          {' '}
-          hrs
-          {' '}
-          {60 - minutes}
-          {' '}
-          mins and choose paid
+          {` if you order within ${24 - hour} hrs ${60 - minutes} mins and choose paid `}
         </span>
         <span className="oneDayShipping"> One-Day Shipping</span>
         <span className="sameDay"> at checkout </span>
