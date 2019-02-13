@@ -1,0 +1,60 @@
+.container{
+	position : relative;
+	top : 200px;
+	display : flex;
+	width : 200px;
+	height : 500px; 
+	flex-direction : column;
+	background-color : white;
+	float : right;
+	border: 1px #D3D3D3 solid;
+	padding: 10px 20px; 
+
+}
+
+.price{
+	color : #B12704;
+	font-size: 17px;
+}
+
+.freeshipping{
+	margin-top : 10px;
+	font-size : 13px;
+	line-height : 1.6;
+}
+
+
+.tooltip{
+	position : relative;
+	display : inline-block;
+	color : #0066c0;
+    cursor : pointer;
+}
+
+.tooltip .tooltiptext{
+	visibility: hidden;
+	width: 200px;
+	background-color: white;
+	color: black;
+	z-index: 1;
+	position: absolute;
+	opacity: 0;
+	transition:opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.body{
+    position: absolute;
+    top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	height:100%;
+	width:100%; 
+	border: 1px solid black;
+}
