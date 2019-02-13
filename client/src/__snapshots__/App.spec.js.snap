@@ -26,6 +26,7 @@ exports[`App Component should render 1`] = `
        
       <DetailsBox />
       <Dates />
+      <Buttons />
     </div>
   </div>
 </div>
