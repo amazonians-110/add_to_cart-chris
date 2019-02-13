@@ -64,6 +64,7 @@ class DetailsBox extends React.Component {
     return (
       <div className="tooltip">
         <span className="details" onClick={this.showMessage}>Details</span>
+        <img src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/amazonarrow.png" alt="drop down arrow" height="10" width="10"/>
         {message}
       </div>
     );
