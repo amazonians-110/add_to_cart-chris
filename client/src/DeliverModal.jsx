@@ -51,7 +51,7 @@ class DeliverModal extends React.Component {
             <div className="middle"></div>
              </div> */}
             <h5>or enter a US zip code</h5>
-            <input type="text" className="textInput"/> <input type="submit" value="Apply" className="textInput"></input>
+            <input type="text" className="textInput"/> <input type="submit" value="Apply" className="textSubmit"></input>
             <h5 className="or">or</h5>
             <select className="options">
                 <option>Ship outside the US</option>
