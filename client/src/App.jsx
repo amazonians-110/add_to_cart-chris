@@ -4,6 +4,7 @@ import './App.css';
 import DetailsBox from './DetailsBox.jsx';
 import Dates from './Dates.jsx';
 import Buttons from './Buttons.jsx';
+import DeliverModal from './DeliverModal.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class App extends React.Component {
             <DetailsBox ref={this.child} />
             <Dates />
             <Buttons />
+            <DeliverModal />
           </div>
         </div>
       </div>
