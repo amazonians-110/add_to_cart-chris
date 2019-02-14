@@ -5,6 +5,7 @@ import DetailsBox from './DetailsBox.jsx';
 import Dates from './Dates.jsx';
 import Buttons from './Buttons.jsx';
 import DeliverModal from './DeliverModal.jsx';
+import AddToListModal from './AddToListModal.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -38,6 +39,7 @@ class App extends React.Component {
             <Dates />
             <Buttons />
             <DeliverModal />
+            <AddToListModal />
           </div>
         </div>
       </div>
