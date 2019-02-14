@@ -33,10 +33,14 @@
     color: #111;
     font-size: 13px;
     margin: auto;
-    width: 50%;
+    width: 40%;
     border: 1px solid #e1e1e1;
     z-index: 100;
     border-radius: 4px 4px 0 0;
+}
+
+.list-header-text{
+    color: #303030;
 }
 
 .exitButton{
@@ -48,7 +52,7 @@
     background-color: #fff;
     padding:10px 14px;
     display: block;
-    width: 50%;
+    width: 40%;
     margin: auto;
 }
 
@@ -85,7 +89,7 @@
 .shopping-list{
     border: 1px #ddd solid;
     height: 100px;
-    width: 200px;
+    width: 150px;
     border-radius:3px;
     padding: 10px;
 }
@@ -93,7 +97,7 @@
 .wish-list{
     border: 1px #ddd solid;
     height: 100px;
-    width: 200px;
+    width: 150px;
     border-radius:4px;
     padding: 10px;
 }
@@ -101,7 +105,7 @@
 .idea-list{
     border: 1px #ddd solid;
     height: 100px;
-    width: 200px;
+    width: 150px;
     border-radius:3px;
     padding: 10px;
 }
@@ -111,8 +115,11 @@
     display: inline; 
 }
 
-.shopping-list-text2, .wish-list-text2, .idea-list-text2{
+
+
+.shopping-list-text2, .wish-list-text2, .idea-list-text2 {
     color: #9e9e9e;
+    padding-left: 15px;
 }
 
 
@@ -129,7 +136,7 @@
     padding: 15px;
 }
 
-.list-name-text, .privacy{
+.list-name-text{
    color: #111;
    display: block;
    font-weight: bold;
@@ -142,8 +149,62 @@
     margin-bottom: 15px;
 }
 
+
+.privacy-text{
+    color: #111;
+    font-weight: bold;
+ }
+
 .privacy{
-    border: 1px solid black;
     width: 300px;
-    padding: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+
+.private{
+    width: 64px;
+    height: 29px;
+    border: 1px solid #d4d6d9;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.public{
+    width: 64px;
+    height: 29px;
+    border: 1px solid #d4d6d9;
+    border-radius: 4px;
+}
+
+.personal{
+    display: block;
+    color: #acacac;
+}
+
+.list-footer{
+    text-align: right;
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea);
+    width: 40%;
+    border-radius: 0 0 4px 4px;
+    margin: auto;
+    display: block;
+    padding:18px 14px 35px 14px;
+}
+
+.createList{
+    background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+    width: 83px;
+    height: 29px;
+    border-radius: 4px;
+    border-color: #a88734 #9c7e31 #846a29;
+}
+
+.cancel{
+    width: 60px;
+    height: 29px;
+    background: linear-gradient(to bottom,#f3f3f3,#fff);
+    border-radius: 4px;
+    margin-right: 5px;
+    border-color: #ADB1B8 #A2A6AC #8D9096;
 }

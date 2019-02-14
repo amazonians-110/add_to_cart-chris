@@ -28,7 +28,7 @@ class AddToListModal extends React.Component {
 
         <div className="list" style={style} onClick={this.addToListModalHide} >
            <div className="list-header">
-           Add to your list
+           <span className="list-header-text">Add to your list</span>
            <button type="button" value="x" className="exitButton">X</button>
           </div>
           <div className="list-content">
@@ -44,21 +44,27 @@ class AddToListModal extends React.Component {
                 <div className="shopping-list-inner">
                 <input type="radio" />
                 <h3 className="shopping-list-text">Shopping List</h3><br></br>
-                <span className="shopping-list-text2">Add items you want to shop for</span>
+                <div className="shopping-list-text2">
+                <span>Add items you want to shop for</span>
+                </div>
               </div>
               </div>
               <div className="wish-list">
               <div className="wish-list-inner">
                 <input type="radio" />
                 <h3 className="wish-list-text">Wish List</h3><br></br>
-                <span className="wish-list-text2">Let people know what gifts you'd like.</span>
+                <div className="wish-list-text2">
+                <span>Let people know what gifts you'd like.</span>
+                </div>
               </div> 
               </div> 
               <div className="idea-list">
               <div className="idea-list-inner">
                 <input type="radio" />
                 <h3 className="idea-list-text">Idea List</h3><br></br>
-                <span className="idea-list-text2">Make a list for the Amazon community</span>
+                <div className="idea-list-text2">
+                <span>Make a list for the Amazon community</span>
+                </div>
               </div> 
               </div>
             </div>
@@ -70,10 +76,17 @@ class AddToListModal extends React.Component {
               <input type="checkbox"/>Keep purchased items on your list
               </div>
               <div className="privacy">
-              <span className="privacy-text">Privacy</span>
+              <span className="privacy-text">Privacy</span><br></br>
+                <button type="button" value="Private" className="private">Private</button>
+                <button type="button" value="Public" className="public">Public</button>
+                <span className="personal">Only you can see this list.</span>
               </div>
             </div>
          </div>
+         <div className="list-footer">
+            <button type="button" className="cancel">Cancel</button>
+            <button type="button" className="createList">Create List</button>
+        </div>
         </div>
         <input type="submit" value="Add To List" className="addButton" onClick={this.addToListModalShow} />
     </div>

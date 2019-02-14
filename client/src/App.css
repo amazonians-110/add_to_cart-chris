@@ -9,7 +9,7 @@
 	float : right;
 	border: 1px #D3D3D3 solid;
 	padding: 10px 20px; 
-
+    border-radius: 4px;
 }
 
 .price{
