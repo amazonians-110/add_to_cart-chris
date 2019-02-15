@@ -16,63 +16,62 @@ class DeliverModal extends React.Component {
   }
 
   hideModal(event) {
-    console.log(event.target);
     if (event.target.className === 'delivery') {
       this.setState({ modalShow: false });
     }
   }
 
   render() {
-    const style = { display: this.state.modalShow ? 'block' : 'none' };
+    const { modalShow } = this.state;
+    const style = { display: modalShow ? 'block' : 'none' };
 
     return (
       <div className="deliverTo">
-
         <div className="delivery" style={style} onClick={this.hideModal}>
           <div className="delivery-header">
-            <span>Choose your location</span>
+            <span className="chooseLocation"><h3>Choose your location</h3></span>
           </div>
-
           <div className="delivery-content">
             <span>Delivery options and delivery speeds may vary for different locations</span>
             <div className="delivery-content-orangebox">
-              <span>
-                <b>christopher tso- chicago</b>
+             <span>
+              <span className="myName">
+                 christopher tso- chicago
                 {' '}
                 - 60632
+              </span>  
                 <br />
-                <span className="address">Default address</span>
+                <div className="address">
+                <span >Default address</span>
+                </div>
               </span>
             </div>
             <span className="addressBook">Manage address book</span>
             <br />
-            <h5>or enter a US zip code</h5>
-            <input type="text" className="textInput"/> <input type="submit" value="Apply" className="textSubmit"></input>
-            <h5 className="or">or</h5>
+            <p className="UsZip">or enter a US zip code</p>
+            <input type="text" className="textInput" /> 
+            {' '}
+            <input type="submit" value="Apply" className="textSubmit" />
+            <p className="or">or</p>
             <select className="options">
-                <option>Ship outside the US</option>
+              <option>Ship outside the US</option>
             </select>
           </div>
-
           <div className="delivery-footer">
             <button type="button" className="done">Done</button>
           </div>
-
         </div>
-
-      <div className="deliverToZipCode">
-        <div className="locator">
-          <img className="locatorimage" src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/Location.png" alt="locator" />
+        <div className="deliverToZipCode">
+          <div className="locator">
+            <img className="locatorimage" src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/Location.png" alt="locator" />
+          </div>
+          <div className="zipCodeText">
+            <span className="zipCode" onClick={this.showModal}>
+              {' '}
+              {'Deliver to Chicago 60632'}
+            </span>
+          </div>
         </div>
-
-        <div className="zipCodeText">
-          <span className="zipCode" onClick={this.showModal}>
-                  {' '}
-                  {'Deliver to Chicago 60632'}
-                </span>
-        </div>
-      </div> 
-      
       </div>
     );
   }
