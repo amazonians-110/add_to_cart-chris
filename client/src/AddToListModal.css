@@ -51,11 +51,14 @@
 .exitButton{
     position: absolute;
     right: 5px;
+    top: 5px;
     border-radius: 3px;
     width: 30px;
-    height: 25px;
+    height: 30px;
     display: inline-block;
-    background: linear-gradient(to bottom,#f7f7f7,#eaeaea)
+    font-size: 15px;
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea);
+    text-align: center;
 }
 
 .list-content{

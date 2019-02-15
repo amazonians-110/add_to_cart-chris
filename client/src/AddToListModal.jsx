@@ -6,8 +6,10 @@ class AddToListModal extends React.Component {
     super(props);
     this.addToListModalShow = this.addToListModalShow.bind(this);
     this.addToListModalHide = this.addToListModalHide.bind(this);
+    this.hideButtonBorder = this.hideButtonBorder.bind(this);
     this.state = {
       addToListModalShow: false,
+      buttonToExit: true,
     };
   }
 
@@ -21,17 +23,27 @@ class AddToListModal extends React.Component {
     }
   }
 
+  hideButtonBorder() {
+    this.setState({ buttonToExit: false });
+  }
+
   render() {
     const { addToListModalShow } = this.state;
     const style = { display: addToListModalShow ? 'block' : 'none' };
+    const { buttonToExit } = this.state;
+    const style1 = {
+      border: buttonToExit ? '1px solid orange' : 'transparent',
+      boxShadow: buttonToExit ? '0 0 3px #ff8000' : ''
+    };
+
     return (
       <div className="addToList">
-        <div className="list" style={style} onClick={this.addToListModalHide}>
-          <div className="list-header">
+        <div className="list" style={style} onClick={this.addToListModalHide} >
+          <div className="list-header" onClick={this.hideButtonBorder}>
             <span className="list-header-text">Add to your list</span>
-            <button type="button" value="x" className="exitButton" onClick={this.addToListModalHide}><b>x</b></button>
+            <button type="button" value="x" className="exitButton" onClick={this.addToListModalHide} style={style1}>x</button>
           </div>
-          <div className="list-content">
+          <div className="list-content" onClick={this.hideButtonBorder}>
             <div className="listOwner">
               <span className="ownerText">This list is for</span>
               <select className="ownerType">
@@ -90,7 +102,7 @@ class AddToListModal extends React.Component {
               </div>
             </div>
           </div>
-          <div className="list-footer">
+          <div className="list-footer" onClick={this.hideButtonBorder}>
             <button type="button" className="cancel">Cancel</button>
             <button type="button" className="createList">Create List</button>
           </div>
