@@ -8,6 +8,7 @@
     border-radius: 3px;
     background-color: #e7e9ec;
     border-color: #ADB1B8 #A2A6AC #8D9096;
+    text-align: left;
 }
 
 
@@ -61,15 +62,19 @@
     font-weight: bold;
 }
 
-.owners{
-    width: 30%;
-    height: 30px;
+.ownerType{
+    padding-left: 10px;
+    width: 148px;
+    height: 29px;
+    -webkit-appearance: none;
+    background: url(https://s3.us-east-2.amazonaws.com/chrisfakephotos/amazonarrow.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #eeeff2;
 }
 
-.owners option{
-    width: 30%;
-    height: 30px;
-}
+
+
 
 .list-types{
     margin-top: 20px;

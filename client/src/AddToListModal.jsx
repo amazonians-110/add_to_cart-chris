@@ -16,9 +16,9 @@ class AddToListModal extends React.Component {
   }
 
   addToListModalHide(event) {
-    if (event.target.className === 'list') {
+      if(event.target.className === 'list' || event.target.className === 'exitButton')
       this.setState({ addToListModalShow: false });
-    }
+
   }
 
   render() {
@@ -29,15 +29,20 @@ class AddToListModal extends React.Component {
         <div className="list" style={style} onClick={this.addToListModalHide} >
            <div className="list-header">
            <span className="list-header-text">Add to your list</span>
-           <button type="button" value="x" className="exitButton">X</button>
+           <button type="button" value="x" className="exitButton" onClick={this.addToListModalHide}>X</button>
           </div>
+
           <div className="list-content">
             <div className="listOwner">
             <span className="ownerText">This list is for</span> 
-            <select className="owners">
+
+        
+            <select className="ownerType">
                 <option>You</option>
                 <option>Someone else</option>
             </select>
+        
+
             </div>
             <div className="list-types">
               <div className="shopping-list">

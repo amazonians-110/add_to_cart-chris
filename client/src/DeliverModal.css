@@ -54,6 +54,7 @@
     margin: auto;
     width: 25%;
     border: 1px solid #e1e1e1;
+    border-top-color: #949494;
     z-index: 100;
     border-radius: 4px 4px 0 0;
 }
@@ -183,9 +184,10 @@ h5:after{
 .textInput{
     border-radius: 3px;
     width: 60%;
+    height: 30px;
 }
 
 .textSubmit{
     border-radius: 3px;
-    width: stretch;
+    height: 30px;
 }
