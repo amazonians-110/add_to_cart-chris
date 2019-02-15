@@ -13,18 +13,25 @@
      display : inline-block;
  }
 
+.exitButton1{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
  
  .message{
      position : absolute;
      border : 1px solid #DCDCDC;
      color : black;
      z-index : 1;
-     width : 350px;
+     width : 394px;
+     height: 198px;
      bottom : 125%;
      background-color: white;
      right : -15px;
      padding-right : 10px;
-     padding-left : 10px;
+     padding-left : 15px;
+     border-radius: 4px;
  }
 
  .message:before{
@@ -49,11 +56,12 @@
 
  .shipping{
      font-weight: bold;
-     font-size: 15px;
+     font-size: 17px;
  }
 
  .moreshipping{
      margin-top : 10px;
+     margin-bottom : 10px;
  }
 
 a:link{

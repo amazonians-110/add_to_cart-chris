@@ -29,7 +29,7 @@ class AddToListModal extends React.Component {
         <div className="list" style={style} onClick={this.addToListModalHide} >
            <div className="list-header">
            <span className="list-header-text">Add to your list</span>
-           <button type="button" value="x" className="exitButton" onClick={this.addToListModalHide}>X</button>
+           <button type="button" value="x" className="exitButton" onClick={this.addToListModalHide}><b>x</b></button>
           </div>
 
           <div className="list-content">
@@ -41,13 +41,13 @@ class AddToListModal extends React.Component {
                 <option>You</option>
                 <option>Someone else</option>
             </select>
-        
-
             </div>
+          <div className="choose">
+            <span className="chooseText">Choose a list type</span>
             <div className="list-types">
               <div className="shopping-list">
                 <div className="shopping-list-inner">
-                <input type="radio" />
+                <input type="radio" name="radio" />
                 <h3 className="shopping-list-text">Shopping List</h3><br></br>
                 <div className="shopping-list-text2">
                 <span>Add items you want to shop for</span>
@@ -56,7 +56,7 @@ class AddToListModal extends React.Component {
               </div>
               <div className="wish-list">
               <div className="wish-list-inner">
-                <input type="radio" />
+                <input type="radio" name="radio"/>
                 <h3 className="wish-list-text">Wish List</h3><br></br>
                 <div className="wish-list-text2">
                 <span>Let people know what gifts you'd like.</span>
@@ -65,7 +65,7 @@ class AddToListModal extends React.Component {
               </div> 
               <div className="idea-list">
               <div className="idea-list-inner">
-                <input type="radio" />
+                <input type="radio" name="radio" />
                 <h3 className="idea-list-text">Idea List</h3><br></br>
                 <div className="idea-list-text2">
                 <span>Make a list for the Amazon community</span>
@@ -73,7 +73,7 @@ class AddToListModal extends React.Component {
               </div> 
               </div>
             </div>
-
+        </div>
             <div className="list-names-section">
               <div className="list-name">
               <span className="list-name-text">List name</span>

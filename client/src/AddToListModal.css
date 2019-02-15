@@ -29,6 +29,7 @@
     text-align: left;
     background: linear-gradient(to bottom,#f7f7f7,#eaeaea);
     padding:10px 13px;
+    line-height: 1.9;
     font-weight: bold;
     display : block;
     color: #111;
@@ -47,6 +48,10 @@
 .exitButton{
     float: right;
     border-radius: 3px;
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    background: linear-gradient(to bottom,#f7f7f7,#eaeaea)
 }
 
 .list-content{
@@ -70,26 +75,63 @@
     background: url(https://s3.us-east-2.amazonaws.com/chrisfakephotos/amazonarrow.png);
     background-repeat: no-repeat;
     background-position: right center;
-    background-color: #eeeff2;
+    background-color: #eff0f3;
 }
 
-
-
-
-.list-types{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
+.choose{
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
-    padding-top: 25px;
+    padding-top: 10px;
+    margin-top: 10px;
     padding-bottom: 25px;
-    justify-content: space-around;
 }
 
 .chooseText{
-    display: block;
+    color: #1e1e1e;
+    font-weight: bold;
 }
+
+
+.list-types{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.darkCircle{
+    width: 15px;
+    height: 15px;
+    padding-top:4px;
+}
+/* input[type="radio"]:after{
+    width: 15px;
+    height: 15px;
+    top: -2px;
+    left:-5px;
+    border-radius: 15px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display:inline-block;
+    border: 1px solid black;
+    visibility:visible;
+}
+
+input[type="radio"]:checked:after{
+    width: 10px;
+    height: 10px;
+    top: -2px;
+    left:-2px;
+    border-radius: 8px;
+    position:relative;
+    background-color: orange;
+    content: '';
+    display:inline-block;
+    visibility:visible;
+} */
+
+
 
 .shopping-list{
     border: 1px #ddd solid;
@@ -173,6 +215,8 @@
     border: 1px solid #d4d6d9;
     border-radius: 4px;
     margin-right: 5px;
+    background-color: #fef8f2;
+    border: 1px solid #f7cca6;
 }
 
 .public{

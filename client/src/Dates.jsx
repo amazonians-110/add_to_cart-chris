@@ -52,7 +52,7 @@ const Dates = () => {
         <span className="bold"> 
           {'FREE Shipping'}
         </span>
-        {' at checkout, or'}
+        {' at checkout. '}
       </div>
 
       <div className="oneDay">
