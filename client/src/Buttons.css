@@ -26,7 +26,7 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 30px;
+    height: 31px;
     background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
     border-color: #a88734 #9c7e31 #846a29;
     padding: 8px;
@@ -58,7 +58,7 @@
     position: relative;
     display: block;
     width: 100%;
-    height: 30px;
+    height: 31px;
     background: linear-gradient(to bottom,#f6c88f,#ed9220);
     border-color: #ca7c1b #be751a #a56616;
     padding: 8px;

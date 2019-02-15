@@ -46,10 +46,6 @@ class DeliverModal extends React.Component {
             </div>
             <span className="addressBook">Manage address book</span>
             <br />
-            {/* <div className="middleZipCode">
-            <span className="enter">or enter a US zip code</span>
-            <div className="middle"></div>
-             </div> */}
             <h5>or enter a US zip code</h5>
             <input type="text" className="textInput"/> <input type="submit" value="Apply" className="textSubmit"></input>
             <h5 className="or">or</h5>
@@ -64,7 +60,7 @@ class DeliverModal extends React.Component {
 
         </div>
 
-
+      <div className="deliverToZipCode">
         <div className="locator">
           <img className="locatorimage" src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/Location.png" alt="locator" />
         </div>
@@ -72,10 +68,11 @@ class DeliverModal extends React.Component {
         <div className="zipCodeText">
           <span className="zipCode" onClick={this.showModal}>
                   {' '}
-                  {'Deliver to christopher - Chicago 60632'}
+                  {'Deliver to Chicago 60632'}
                 </span>
         </div>
-
+      </div> 
+      
       </div>
     );
   }
