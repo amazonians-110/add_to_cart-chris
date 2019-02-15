@@ -31,6 +31,8 @@
     border-color: #a88734 #9c7e31 #846a29;
     padding: 8px;
     border-radius: 3px;
+    font-size: 13px;
+    text-align: middle;
 }
 
 .add{
@@ -63,6 +65,8 @@
     border-color: #ca7c1b #be751a #a56616;
     padding: 8px;
     border-radius: 3px;
+    font-size: 13px;
+    text-align: middle;
 }
 
 .buyer{
