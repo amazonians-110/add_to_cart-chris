@@ -12,6 +12,164 @@
     border-radius: 4px;
 }
 
+.navbar{
+	display: flex;
+	flex-direction: column;
+	background-color: #232f3e;
+	width: 100%;
+	top: 20px;
+	height: 150px;
+	position:absolute;
+}
+
+.navbar1{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: row;
+	background-color: #232f3e;
+}
+
+.threeStripes{
+	border: 1px solid #424951;
+	border-radius: 4px;
+	position: relative;
+	left: 10px;
+	top: 10px;
+	width: 40px;
+	height: 40px;
+	padding:5px;
+}
+
+.threeStripesImage{
+	width:40px;
+	height:40px;
+	margin: auto;
+}
+
+.amazonLogoImage{
+	width:160px;
+	height:60px;
+	padding-top: 10px;
+	position: relative;
+	left: 20px;
+}
+
+.searchBar{
+	position: relative;
+	display: flex;
+	align-items: center;
+	left: 80px;
+	padding-top: 10px;
+}
+
+.searchSelect{
+	height: 40px;
+	width: 60px;
+	-webkit-appearance: none;
+    background: url(https://s3.us-east-2.amazonaws.com/chrisfakephotos/amazonarrow.png);
+    background-repeat: no-repeat;
+	background-position: right center;
+	color:#515151;
+	border: #ADB1C9 #A2A6AC #8D9096;
+	background-color: #f1f2f5;
+	padding-left:10px;
+	padding-right: 20px;
+	font-size: 15px;
+	border-radius: 4px 0px 0px 4px;
+}
+
+.searchInput{
+	border: 1px solid white;
+	height: 36px;
+	width: 725px;
+}
+
+.searchSubmit{
+	position: relative;
+	background-color:#ffbe66;
+	height: 30px;
+	width: 50px;
+	border-radius: 0px 4px 4px 0px;
+	text-align: center;
+	padding:5px;
+}
+
+.womenOwned{
+	position: relative;
+	height: 40px;
+	width: 400px;
+	left: 120px;
+	top: 20px;
+}
+
+.navbar2{
+	width: 100%;
+	height: 50%;
+	border: 1px solid green;
+	display: flex;
+	flex-direction: row;
+}
+
+.locator2{
+   border: 1px solid white;
+   width: 200px;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   padding-left: 20px;
+   padding-top: 15px;
+  
+}
+
+.locatorImage2{
+	width: 32px;
+	height: 35px;
+
+}
+
+.locator2-text{
+	width:120px;
+	height: 35px;
+	color: white;
+}
+
+.barOptions{
+	position: relative;
+	width: 850px;
+	height: 200px;
+	border: 1px solid white;
+	left: 65px;
+	display: flex;
+	flex-direction: row;
+}
+
+.pickupLocation, .history, .myAmazon, .todaysDeals{
+	width: 180px;
+	height: 30px;
+	position: relative;
+	top: 25px;
+	margin-left: 10px;
+	padding-top:10px;
+	padding-right: 10px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.pickupLocation:hover, .history:hover, .myAmazon:hover, .todaysDeals:hover{
+   border: 1px solid #6f6b6b;
+}
+
+.yourPickup, .browsingHistory, .myAmazon-text, .todaysDeals-text{
+	color: #ccc;
+	font-size: 18px;
+}
+
+.chicagoAddress{
+	font-size: 18px;
+	font-weight: bold;
+}
+
 .price{
 	padding-top:5px;
 	color : #B12704;

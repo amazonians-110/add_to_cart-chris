@@ -40,6 +40,54 @@ class App extends React.Component {
   render() {
     return (
       <div className="body" onClick={this.clickOutside}>
+        <div className="navbar">
+
+        <div className="navbar1">
+         <div className="threeStripes">
+           <img className="threeStripesImage" src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/threestripes.png" alt="menu"/>
+         </div> 
+         <div className="amazonLogo">
+         <img className="amazonLogoImage" src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/amazonlogo.png" alt="logo"/>
+         </div>
+
+         <div className="searchBar">
+          <select className="searchSelect">
+            <option>All</option>  
+          </select> 
+          <input className="searchInput" type = "text" />
+          <input className="searchSubmit" type = "image" src = "https://s3.us-east-2.amazonaws.com/chrisfakephotos/amazonmagglass2.png"></input>
+        </div>
+
+        <div className="womenOwned">
+           <img className="womenOwnedImage"  src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2019/img/Small_Business_Empowerment/XCM_Manual_1158428_swm_February_Editorial_400x39_Small_Business_Empowerment_1158428_us_storefronts_feb_swms_400x39_1548366110_jpg._CB455105052_.jpg" />
+        </div>
+        </div> 
+
+
+        <div className="navbar2">
+         <div className="locator2">
+         <img className="locatorImage2"  src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/locator3.png" />
+           <div className="locator2-text">
+             <span>Deliver to chris</span> <span className="chicagoAddress">Chicago 60632</span>
+           </div>
+         </div>
+         <div className="barOptions">
+             <div className ="pickupLocation">
+             <span className="yourPickup">Your Pickup Location</span>
+             </div>
+             <div className ="history">
+             <span className="browsingHistory">Browsing History</span>
+             </div>
+             <div className ="myAmazon">
+             <span className="myAmazon-text">chris's Amazon.com</span>
+             </div>
+             <div className ="todaysDeals">
+             <span className="todaysDeals-text">Today's Deals</span>
+             </div>
+         </div> 
+        </div>
+
+      </div>  
         <div className="container">
           <div className="price"> ${this.state.price} </div>
           <div className="freeshipping">
