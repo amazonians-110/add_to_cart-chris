@@ -16,4 +16,11 @@ describe('Deliver Component', () => {
     expect(showModal).toHaveBeenCalledTimes(1);
     expect(wrapper.find('.delivery').exists()).toEqual(true);
   });
+
+  it('should set the showModal state to true when Deliver To is clicked', () => {
+    const wrapper = shallow(<DeliverModal />);
+    const zipCode = wrapper.find('.zipCode');
+    zipCode.simulate('click');
+    expect(wrapper.state().modalShow).toEqual(true);
+  })
 });

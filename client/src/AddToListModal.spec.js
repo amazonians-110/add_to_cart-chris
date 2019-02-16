@@ -17,5 +17,11 @@ describe('AddToList Component', () => {
     expect(wrapper.find('.list').exists()).toEqual(true);
   });
 
+  it('should set the addToListModalShow state to true when Add To List is clicked', () => {
+    const wrapper = shallow(<AddToListModal />);
+    const addButton = wrapper.find('.addButton');
+    addButton.simulate('click');
+    expect(wrapper.state().addToListModalShow).toEqual(true);
+  })
  
 });

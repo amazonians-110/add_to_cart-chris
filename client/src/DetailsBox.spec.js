@@ -16,4 +16,12 @@ describe('Details Component', () => {
     expect(showMessage).toHaveBeenCalledTimes(1);
     expect(wrapper.find('.message').exists()).toEqual(true);
   })
+
+  it('should set the clicked state to true when details is clicked', () => {
+    const wrapper = shallow(<DetailsBox />);
+    const detailsText = wrapper.find('.details');
+    detailsText.simulate('click');
+    expect(wrapper.state().clicked).toEqual(true);
+  })
+
 });
