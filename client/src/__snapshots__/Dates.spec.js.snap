@@ -31,7 +31,7 @@ exports[`Dates Component should render 1`] = `
     <span
       className="sameDay"
     >
-       if you order within 6 hrs 23 mins and choose paid 
+       if you order within 4 hrs 12 mins and choose paid 
     </span>
     <span
       className="oneDayShipping"
