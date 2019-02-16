@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 import DetailsBox from './DetailsBox.jsx';
 
 describe('Details Component', () => {
@@ -7,4 +7,13 @@ describe('Details Component', () => {
     const details = shallow(<DetailsBox />);
     expect(details).toMatchSnapshot();
   });
+
+  it('should call show message on click', () => {
+    const showMessage = jest.spyOn(DetailsBox.prototype, 'showMessage');
+    const wrapper = mount(<DetailsBox /> );
+    const detailsText = wrapper.find('.details');
+    detailsText.simulate('click');
+    expect(showMessage).toHaveBeenCalledTimes(1);
+    expect(wrapper.find('.message').exists()).toEqual(true);
+  })
 });

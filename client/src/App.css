@@ -6,7 +6,7 @@
 	height : 500px; 
 	flex-direction : column;
 	background-color : white;
-	float : right;
+	left: 1300px;
 	border: 1px #D3D3D3 solid;
 	padding: 10px 20px; 
     border-radius: 4px;
