@@ -46,7 +46,7 @@ class DetailsBox extends React.Component {
             {' '}
             <div className="shipping">
               <b>Get free shipping</b>
-              <button type="button" style={style1} onClick={this.hideMessage}><b>X</b></button>
+              <button type="button" className="exitButton1" style={style1} onClick={this.hideMessage}><b>X</b></button>
             </div>
             {' '}
             <br />
@@ -55,7 +55,6 @@ class DetailsBox extends React.Component {
             within the U.S. when you order $25 of eligible items sold or fulfilled by Amazon.
             <br />
             <div className="moreshipping">Or get 4-5 business-day shipping on this item for $5.99. (Prices may vary for AK and HI.)</div>
-            <br />
             <a href="google.com">Learn more about free shipping</a>
           </p>
         </div>

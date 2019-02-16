@@ -52,7 +52,7 @@ const Dates = () => {
         <span className="bold"> 
           {'FREE Shipping'}
         </span>
-        {' at checkout, or'}
+        {' at checkout. '}
       </div>
 
       <div className="oneDay">
@@ -71,7 +71,7 @@ const Dates = () => {
           <br />
         </span>
         <span className="location"> 
-          {' Ships from and sold by Amazon.com '}
+          {' Ships from and sold by Amazon.com. '}
         </span>
       </div>
     </div>

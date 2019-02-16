@@ -11,7 +11,8 @@ exports[`App Component should render 1`] = `
     <div
       className="price"
     >
-       $19.99 
+       $
+       
     </div>
     <div
       className="freeshipping"
@@ -27,6 +28,8 @@ exports[`App Component should render 1`] = `
       <DetailsBox />
       <Dates />
       <Buttons />
+      <DeliverModal />
+      <AddToListModal />
     </div>
   </div>
 </div>

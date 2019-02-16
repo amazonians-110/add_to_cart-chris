@@ -6,15 +6,14 @@ const { getProduct } = require('../database/index.js');
 const { addToCart } = require('../database/index.js');
 const { itemsInCart } = require('../database/index.js');
 
-app.use(express.static('./client/dist'));
+app.use('/product/:id', express.static('./client/dist'));
 
 const PORT = 3002;
 
 app.listen(PORT, console.log('listening at 3002'));
 
-app.get('/product/:id', (req, res) => {
+app.get('/product/:id/item', (req, res) => {
   const idToSearch = req.params.id;
-  console.log('idToSearch', idToSearch);
   getProduct(idToSearch, (err, data) => {
     if (err) {
       res.status(400).send();
@@ -25,7 +24,6 @@ app.get('/product/:id', (req, res) => {
 });
 
 app.put('/product/:id', (req, res) => {
-  // need to get the amount selected from the drop down menu from client
   const idToSearch = req.params.id;
   addToCart(idToSearch, (err, data) => {
     if (err) {
@@ -45,3 +43,4 @@ app.get('/addtocart', (req, res) => {
     res.status(200).send(data);
   });
 });
+

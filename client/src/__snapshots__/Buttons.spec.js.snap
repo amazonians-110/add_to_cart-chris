@@ -12,17 +12,7 @@ exports[`Buttons Component should render 1`] = `
   </span>
   <select
     id="quantity"
-  >
-    <option>
-      1 
-    </option>
-    <option>
-      2 
-    </option>
-    <option>
-      3 
-    </option>
-  </select>
+  />
   <div
     className="cart"
   >
