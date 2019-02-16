@@ -15,6 +15,10 @@ class AddToListModal extends React.Component {
 
   addToListModalShow() {
     this.setState({ addToListModalShow: true });
+    const { buttonToExit } = this.state;
+    if (buttonToExit === false) {
+      this.setState({ buttonToExit: true });
+    }
   }
 
   addToListModalHide(event) {
@@ -57,6 +61,7 @@ class AddToListModal extends React.Component {
                 <div className="shopping-list">
                   <div className="shopping-list-inner">
                     <input type="radio" name="radio" />
+                    {' '}
                     <h3 className="shopping-list-text">Shopping List</h3>
                     <br />
                     <div className="shopping-list-text2">
@@ -67,6 +72,7 @@ class AddToListModal extends React.Component {
                 <div className="wish-list">
                   <div className="wish-list-inner">
                     <input type="radio" name="radio" />
+                    {' '}
                     <h3 className="wish-list-text">Wish List</h3>
                     <br />
                     <div className="wish-list-text2">
@@ -77,6 +83,7 @@ class AddToListModal extends React.Component {
                 <div className="idea-list">
                   <div className="idea-list-inner">
                     <input type="radio" name="radio" />
+                    {' '}
                     <h3 className="idea-list-text">Idea List</h3>
                     <br />
                     <div className="idea-list-text2">

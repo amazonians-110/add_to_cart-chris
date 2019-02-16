@@ -34,15 +34,15 @@ class DeliverModal extends React.Component {
           <div className="delivery-content">
             <span>Delivery options and delivery speeds may vary for different locations</span>
             <div className="delivery-content-orangebox">
-             <span>
-              <span className="myName">
+              <span>
+                <span className="myName">
                  christopher tso- chicago
-                {' '}
+                 {' '}
                 - 60632
-              </span>  
+                </span>  
                 <br />
                 <div className="address">
-                <span >Default address</span>
+                  <span >Default address</span>
                 </div>
               </span>
             </div>

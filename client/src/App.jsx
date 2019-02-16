@@ -1,6 +1,7 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
 import './App.css';
+import axios from 'axios';
 import DetailsBox from './DetailsBox.jsx';
 import Dates from './Dates.jsx';
 import Buttons from './Buttons.jsx';
@@ -11,10 +12,23 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-    
+      price: ''
     };
     this.child = React.createRef();
     this.clickOutside = this.clickOutside.bind(this);
+  }
+
+
+  componentDidMount() {
+    const urlArray = document.URL.split('/');
+    const productID = Number(urlArray[urlArray.length - 2]);
+    axios.get(`/product/${productID}/item`)
+      .then((res) => {
+        this.setState({ price: res.data[0].price });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   clickOutside(event) {
@@ -25,9 +39,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="body" onClick ={this.clickOutside}>
+      <div className="body" onClick={this.clickOutside}>
         <div className="container">
-          <div className="price"> $19.99 </div>
+          <div className="price"> ${this.state.price} </div>
           <div className="freeshipping">
             &
             {' '}
