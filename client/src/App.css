@@ -106,13 +106,11 @@
 .navbar2{
 	width: 100%;
 	height: 50%;
-	border: 1px solid green;
 	display: flex;
 	flex-direction: row;
 }
 
 .locator2{
-   border: 1px solid white;
    width: 200px;
    height: 100%;
    display: flex;
@@ -138,7 +136,6 @@
 	position: relative;
 	width: 850px;
 	height: 200px;
-	border: 1px solid white;
 	left: 65px;
 	display: flex;
 	flex-direction: row;
@@ -165,6 +162,74 @@
 	font-size: 18px;
 }
 
+.personalName{
+	position: relative;
+	left: 70px;
+	width: 600px;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+}
+
+.language{
+	width: 50px;
+	height: 60px;
+	border-right: 1px solid #6f6b6b;
+	text-align: center;
+}
+
+.language-text{
+	font-size: 20px;
+	color: #ccc;
+}
+
+.globe{
+	height: 30px;
+	width: 30px;
+}
+.myName2{
+	width: 150px; 
+	height:20px;
+	padding-top: 15px;
+	margin-left: 10px;
+}
+
+.myName-text2{
+	font-size: 18px;
+	color:  #ccc;
+}
+
+.accountsandlists, .orders-text, .prime-text{
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+.cart-text{
+	font-size: 20px;
+	color: white;
+	padding-top: 20px;
+	font-weight: bold;
+}
+
+.cart-image{
+	width: 60px;
+	height: 60px;
+}
+.orders, .prime{
+	width: 100px;
+	height: 20px;
+	padding-top: 35px;
+	text-align: center;
+}
+
+.cart2{
+	width: 100px;
+	padding-left: 20px;
+	padding-top: 15px;
+	display: flex; 
+	flex-direction: row;
+}
 .chicagoAddress{
 	font-size: 18px;
 	font-weight: bold;
