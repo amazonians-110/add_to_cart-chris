@@ -22,7 +22,7 @@ class App extends React.Component {
   componentDidMount() {
     const urlArray = document.URL.split('/');
     const productID = Number(urlArray[urlArray.length - 2]);
-    axios.get(`/product/${productID}/item`)
+    axios.get(`http://127.0.0.1:3002/product/${productID}/item`)
       .then((res) => {
         this.setState({ price: res.data[0].price });
       })

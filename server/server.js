@@ -34,7 +34,7 @@ app.put('/product/:id', (req, res) => {
   });
 });
 
-app.get('/addtocart', (req, res) => {
+app.get('http://127.0.0.1:3002/addtocart', (req, res) => {
   itemsInCart((err, data) => {
     if (err) {
       res.status(400).send();
