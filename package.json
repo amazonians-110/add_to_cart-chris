@@ -11,7 +11,8 @@
     "test": "jest",
     "start": "node database/index.js",
     "tester": "nodemon server/server.js",
-    "react-dev": "webpack -d --watch"
+    "react-dev": "webpack -d --watch",
+    "postinstall" : "nodemon server/server.js & webpack -d --watch"
   },
   "jest": {
     "moduleFileExtensions": [
