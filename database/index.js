@@ -46,8 +46,10 @@ for (let i = 0; i < 100; i += 1) {
     imageURL: photos[randomIndex2],
   });
 
-  productToCreate.save(() => {
-    console.log('saved');
+  productToCreate.save((err) => {
+     if(err){
+       console.log(err)
+     }
   });
 }
 
