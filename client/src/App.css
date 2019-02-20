@@ -1,12 +1,11 @@
 .container{
-	position : relative;
-	top : 200px;
+	
 	display : flex;
 	width : 244px;
 	height : 500px; 
 	flex-direction : column;
 	background-color : white;
-	left: 1300px;
+
 	border: 1px #D3D3D3 solid;
 	padding: 10px 20px; 
     border-radius: 4px;
@@ -51,7 +50,7 @@
 }
 
 
-.body{
+/* .body{
     position: absolute;
     top:0;
 	left:0;
@@ -60,4 +59,4 @@
 	height:100%;
 	width:100%; 
 	border: 1px solid white;
-}
+} */

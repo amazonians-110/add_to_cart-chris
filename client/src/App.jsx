@@ -39,7 +39,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="body" onClick={this.clickOutside}>
+      
         <div className="container">
           <div className="price"> ${this.state.price} </div>
           <div className="freeshipping">
@@ -56,7 +56,7 @@ class App extends React.Component {
             <AddToListModal />
           </div>
         </div>
-      </div>
+   
     );
   }
 }
