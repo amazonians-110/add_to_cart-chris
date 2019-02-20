@@ -1,18 +1,21 @@
 // SERVER FILE
 const express = require('express');
+const cors = require('cors');
+const path = require('path');
 
 const app = express();
 const { getProduct } = require('../database/index.js');
 const { addToCart } = require('../database/index.js');
 const { itemsInCart } = require('../database/index.js');
 
-app.use('/product/:id', express.static('./client/dist'));
 
-const PORT = 3002;
+app.use(cors());
 
-app.listen(PORT, console.log('listening at 3002'));
 
-app.get('/product/:id/item', (req, res) => {
+app.use(express.static(`${__dirname}/../client/dist`));
+
+
+app.get('api/product/:id', (req, res) => {
   const idToSearch = req.params.id;
   getProduct(idToSearch, (err, data) => {
     if (err) {
@@ -34,7 +37,7 @@ app.put('/product/:id', (req, res) => {
   });
 });
 
-app.get('http://127.0.0.1:3002/addtocart', (req, res) => {
+app.get('/addtocart', (req, res) => {
   itemsInCart((err, data) => {
     if (err) {
       res.status(400).send();
@@ -44,3 +47,10 @@ app.get('http://127.0.0.1:3002/addtocart', (req, res) => {
   });
 });
 
+app.get('*', (req, res) => {
+  res.sendFile(`/client/dist/index.html`, {'root': `${__dirname}/../`});
+});
+
+const PORT = 3002;
+
+app.listen(PORT, console.log('listening at 3002'));

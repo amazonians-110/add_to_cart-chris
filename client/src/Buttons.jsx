@@ -13,8 +13,8 @@ class Buttons extends React.Component {
   componentDidMount() {
     const { quantity } = this.state;
     const urlArray = document.URL.split('/');
-    const productID = Number(urlArray[urlArray.length - 2]);
-    axios.get(`http://127.0.0.1:3002/product/${productID}/item`)
+    const productID = Number(urlArray[urlArray.length - 1]);
+    axios.get(`http://127.0.0.1:3002/api/product/${productID}`)
       .then((res) => {
         for (let i = 1; i < res.data[0].quantity + 1; i += 1) {
           quantity.push(<option>{i}</option>);
