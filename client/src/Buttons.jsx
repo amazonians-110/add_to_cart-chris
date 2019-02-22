@@ -28,8 +28,9 @@ class Buttons extends React.Component {
 
   render() {
     const { quantity } = this.state;
+    const style = { visibility: quantity ? 'visible' : 'hidden' };
     return (
-      <div className="buttons">
+      <div className="buttons" style={style}>
         <span className="qty">
           {'Qty:'}
           {' '}

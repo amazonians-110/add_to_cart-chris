@@ -8,18 +8,34 @@ import Buttons from './Buttons.jsx';
 import DeliverModal from './DeliverModal.jsx';
 import AddToListModal from './AddToListModal.jsx';
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      price: ''
+      // price: '',
     };
     this.child = React.createRef();
     this.clickOutside = this.clickOutside.bind(this);
+    this.getData();
   }
 
 
   componentDidMount() {
+    // const urlArray = document.URL.split('/');
+    // const productID = Number(urlArray[urlArray.length - 1]);
+    // axios.get(`/api/product/${productID}`)
+    //   .then((res) => {
+    //     this.setState({ price: res.data[0].price });
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
+
+    this.getData();
+  }
+
+  getData() {
     const urlArray = document.URL.split('/');
     const productID = Number(urlArray[urlArray.length - 1]);
     axios.get(`/api/product/${productID}`)
@@ -38,25 +54,31 @@ class App extends React.Component {
   }
 
   render() {
+    const { price } = this.state;
+    const style = { display: price ? 'flex' : 'none' };
     return (
-      
-        <div className="container">
-          <div className="price"> ${this.state.price} </div>
-          <div className="freeshipping">
-            &
-            {' '}
-            <b>FREE Shipping</b>
-            {' '}
-            on orders over $25 shipped by Amazon.
-            {' '}
-            <DetailsBox ref={this.child} />
-            <Dates />
-            <Buttons />
-            <DeliverModal />
-            <AddToListModal />
-          </div>
+      <div className="container" style={style}>
+        <div className="price">
+          {' '}
+          $
+          { price }
+          {' '}
         </div>
-   
+        <div className="freeshipping">
+            &
+          {' '}
+          <b>FREE Shipping</b>
+          {' '}
+          on orders over $25 shipped by Amazon.
+          {' '}
+          <DetailsBox ref={this.child} />
+          <Dates />
+          <Buttons />
+          <DeliverModal />
+          <AddToListModal />
+        </div>
+      </div>
+
     );
   }
 }
