@@ -17,7 +17,7 @@ class App extends React.Component {
     };
     this.child = React.createRef();
     this.clickOutside = this.clickOutside.bind(this);
-    this.getData();
+    this.getData = this.getData.bind(this);
   }
 
 
