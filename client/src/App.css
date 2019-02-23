@@ -1,5 +1,4 @@
 .container{
-	
 	display : flex;
 	width : 244px;
 	height : 500px; 
@@ -11,7 +10,7 @@
     border-radius: 4px;
 }
 
-.price{
+.priceChris{
 	padding-top:5px;
 	color : #B12704;
 	font-size: 17px;

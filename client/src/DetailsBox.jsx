@@ -1,5 +1,5 @@
 import React from 'react';
-import './DetailsBox.css';
+import details from './DetailsBox.css';
 
 class DetailsBox extends React.Component {
   constructor(props) {
@@ -41,12 +41,12 @@ class DetailsBox extends React.Component {
     let message;
     if (clicked) {
       message = (
-        <div className="message" onClick={this.hideBorder}>
+        <div className={details.message} onClick={this.hideBorder}>
           <p>
             {' '}
-            <div className="shipping">
+            <div className={details.shipping}>
               <b>Get free shipping</b>
-              <button type="button" className="exitButton1" style={style1} onClick={this.hideMessage}><b>X</b></button>
+              <button type="button" className={details.exitButton1} style={style1} onClick={this.hideMessage}><b>X</b></button>
             </div>
             {' '}
             <br />
@@ -54,16 +54,16 @@ class DetailsBox extends React.Component {
             {' '}
             within the U.S. when you order $25 of eligible items sold or fulfilled by Amazon.
             <br />
-            <div className="moreshipping">Or get 4-5 business-day shipping on this item for $5.99. (Prices may vary for AK and HI.)</div>
+            <div className={details.moreshipping}>Or get 4-5 business-day shipping on this item for $5.99. (Prices may vary for AK and HI.)</div>
             <a href="google.com">Learn more about free shipping</a>
           </p>
         </div>
       );
     }
     return (
-      <div className="tooltip">
-        <span className="details" onClick={this.showMessage}>Details</span>
-        <img className="arrow" src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/amazonarrow.png" alt="drop down arrow" />
+      <div className={details.tooltip}>
+        <span className={details.details} onClick={this.showMessage}>Details</span>
+        <img className={details.arrow} src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/amazonarrow.png" alt="drop down arrow" />
         {message}
       </div>
     );

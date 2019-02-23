@@ -1,5 +1,5 @@
 import React from 'react';
-import './AddToListModal.css';
+import addToModal from './AddToListModal.css';
 
 class AddToListModal extends React.Component {
   constructor(props) {
@@ -22,7 +22,8 @@ class AddToListModal extends React.Component {
   }
 
   addToListModalHide(event) {
-    if (event.target.className === 'list' || event.target.className === 'exitButton') {
+    console.log(event.target);
+    if (event.target.className === addToModal.list || event.target.className === addToModal.exitButton) {
       this.setState({ addToListModalShow: false });
     }
   }
@@ -41,80 +42,80 @@ class AddToListModal extends React.Component {
     };
 
     return (
-      <div className="addToList">
-        <div className="list" style={style} onClick={this.addToListModalHide} >
-          <div className="list-header" onClick={this.hideButtonBorder}>
-            <span className="list-header-text">Add to your list</span>
-            <button type="button" value="x" className="exitButton" onClick={this.addToListModalHide} style={style1}>x</button>
+      <div className={addToModal.addToList}>
+        <div className={addToModal.list} style={style} onClick={this.addToListModalHide} >
+          <div className={addToModal.listHeader} onClick={this.hideButtonBorder}>
+            <span className={addToModal.listHeaderText}>Add to your list</span>
+            <button type="button" value="x" className={addToModal.exitButton} onClick={this.addToListModalHide} style={style1}>x</button>
           </div>
-          <div className="list-content" onClick={this.hideButtonBorder}>
-            <div className="listOwner">
-              <span className="ownerText">This list is for</span>
-              <select className="ownerType">
+          <div className={addToModal.listContent} onClick={this.hideButtonBorder}>
+            <div className={addToModal.listOwner}>
+              <span className={addToModal.ownerText}>This list is for</span>
+              <select className={addToModal.ownerType}>
                 <option>You</option>
                 <option>Someone else</option>
               </select>
             </div>
-            <div className="choose">
-              <span className="chooseText">Choose a list type</span>
-              <div className="list-types">
-                <div className="shopping-list">
-                  <div className="shopping-list-inner">
+            <div className={addToModal.choose}>
+              <span className={addToModal.chooseText}>Choose a list type</span>
+              <div className={addToModal.listTypes}>
+                <div className={addToModal.shoppingList}>
+                  <div className={addToModal.shoppingListInner}>
                     <input type="radio" name="radio" />
                     {' '}
-                    <h3 className="shopping-list-text">Shopping List</h3>
+                    <h3 className={addToModal.shoppingListText}>Shopping List</h3>
                     <br />
-                    <div className="shopping-list-text2">
+                    <div className={addToModal.shoppingListText2}>
                       <span>Add items you want to shop for.</span>
                     </div>
                   </div>
                 </div>
-                <div className="wish-list">
-                  <div className="wish-list-inner">
+                <div className={addToModal.wishList}>
+                  <div className={addToModal.wishListInner}>
                     <input type="radio" name="radio" />
                     {' '}
-                    <h3 className="wish-list-text">Wish List</h3>
+                    <h3 className={addToModal.wishListText}>Wish List</h3>
                     <br />
-                    <div className="wish-list-text2">
+                    <div className={addToModal.wishListText2}>
                       <span>Let people know what gifts you'd like.</span>
                     </div>
                   </div>
                 </div>
-                <div className="idea-list">
-                  <div className="idea-list-inner">
+                <div className={addToModal.ideaList}>
+                  <div className={addToModal.ideaListInner}>
                     <input type="radio" name="radio" />
                     {' '}
-                    <h3 className="idea-list-text">Idea List</h3>
+                    <h3 className={addToModal.ideaListText}>Idea List</h3>
                     <br />
-                    <div className="idea-list-text2">
+                    <div className={addToModal.ideaListText2}>
                       <span>Make a list for the Amazon community.</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="list-names-section">
-              <div className="list-name">
-                <span className="list-name-text">List name</span>
-                <input type="text" value="Shopping List" className="list-name-input" />
+            <div className={addToModal.listNamesSection}>
+              <div className={addToModal.listName}>
+                <span className={addToModal.listNameText}>List name</span>
+                <input type="text" value="Shopping List" className={addToModal.listNameInput} />
                 <input type="checkbox" />
                 Keep purchased items on your list
               </div>
-              <div className="privacy">
-                <span className="privacy-text">Privacy</span>
+              <div className={addToModal.privacy}>
+                <span className={addToModal.privacyText}>Privacy</span>
                 <br />
-                <button type="button" value="Private" className="private">Private</button>
-                <button type="button" value="Public" className="public">Public</button>
-                <span className="personal">Only you can see this list.</span>
+                <button type="button" value="Private" className={addToModal.private}>Private</button>
+                <button type="button" value="Public" className={addToModal.public}>Public</button>
+                <span className={addToModal.personal}>Only you can see this list.</span>
               </div>
             </div>
           </div>
-          <div className="list-footer" onClick={this.hideButtonBorder}>
-            <button type="button" className="cancel">Cancel</button>
-            <button type="button" className="createList">Create List</button>
+          <div className={addToModal.listFooter} onClick={this.hideButtonBorder}>
+            <button type="button" className={addToModal.cancel}>Cancel</button>
+            <button type="button" className={addToModal.createList}>Create List</button>
           </div>
         </div>
-        <input type="submit" value="Add To List" className="addButton" onClick={this.addToListModalShow} />
+        <input type="submit" value="Add To List" className={addToModal.addButton} onClick={this.addToListModalShow} />
       </div>
     );
   }

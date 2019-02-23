@@ -1,6 +1,6 @@
 import React from 'react';
 import CSSModules from 'react-css-modules';
-import './App.css';
+import app from './App.css';
 import axios from 'axios';
 import DetailsBox from './DetailsBox.jsx';
 import Dates from './Dates.jsx';
@@ -57,14 +57,14 @@ class App extends React.Component {
     const { price } = this.state;
     const style = { display: price ? 'flex' : 'none' };
     return (
-      <div className="container" style={style}>
-        <div className="price">
+      <div className={app.container} style={style}>
+        <div className={app.priceChris}>
           {' '}
           $
           { price }
           {' '}
         </div>
-        <div className="freeshipping">
+        <div className={app.freeshipping}>
             &
           {' '}
           <b>FREE Shipping</b>

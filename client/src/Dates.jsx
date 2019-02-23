@@ -1,5 +1,5 @@
 import React from 'react';
-import './Dates.css';
+import dates from './Dates.css';
 
 const Dates = () => {
   const date = new Date();
@@ -43,34 +43,34 @@ const Dates = () => {
   const hour = date.getHours();
   const minutes = date.getMinutes();
   return (
-    <div className="expectedDates">
-      <div className="free">
-        <span className="bold">
+    <div className={dates.expectedDates}>
+      <div className={dates.free}>
+        <span className={dates.bold}>
           {` Get it ${actualWeekday}, ${actualMonth} ${dayNumber} - ${fourDaysLater}, ${actualMonth} ${dayNumber + 4} `}
         </span>
         {' if you choose '}
-        <span className="bold"> 
+        <span className={dates.bold}> 
           {'FREE Shipping'}
         </span>
         {' at checkout. '}
       </div>
 
-      <div className="oneDay">
-        <span className="bold">
+      <div className={dates.oneDay}>
+        <span className={dates.bold}>
           {` Get it Tomorrow, ${actualMonth} ${dayNumber + 1}`}
         </span>
-        <span className="sameDay">
+        <span className={dates.sameDay}>
           {` if you order within ${24 - hour} hrs ${60 - minutes} mins and choose paid `}
         </span>
-        <span className="oneDayShipping"> One-Day Shipping</span>
-        <span className="sameDay"> at checkout </span>
+        <span className={dates.oneDayShipping}> One-Day Shipping</span>
+        <span className={dates.sameDay}> at checkout </span>
       </div>
-      <div className="stock">
-        <span className="available">
+      <div className={dates.stock}>
+        <span className={dates.available}>
           {' In Stock. '} 
           <br />
         </span>
-        <span className="location"> 
+        <span className={dates.location}> 
           {' Ships from and sold by Amazon.com. '}
         </span>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './DeliverModal.css';
+import deliverModal from './DeliverModal.css';
 
 class DeliverModal extends React.Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class DeliverModal extends React.Component {
   }
 
   hideModal(event) {
-    if (event.target.className === 'delivery') {
+    if (event.target.className === deliverModal.delivery) {
       this.setState({ modalShow: false });
     }
   }
@@ -26,47 +26,47 @@ class DeliverModal extends React.Component {
     const style = { display: modalShow ? 'block' : 'none' };
 
     return (
-      <div className="deliverTo">
-        <div className="delivery" style={style} onClick={this.hideModal}>
-          <div className="delivery-header">
-            <span className="chooseLocation"><h3>Choose your location</h3></span>
+      <div className={deliverModal.deliverTo}>
+        <div className={deliverModal.delivery} style={style} onClick={this.hideModal}>
+          <div className={deliverModal.deliveryHeader}>
+            <span className={deliverModal.chooseLocation}><h3>Choose your location</h3></span>
           </div>
-          <div className="delivery-content">
+          <div className={deliverModal.deliveryContent}>
             <span>Delivery options and delivery speeds may vary for different locations</span>
-            <div className="delivery-content-orangebox">
+            <div className={deliverModal.deliveryContentOrangebox}>
               <span>
-                <span className="myName">
+                <span className={deliverModal.myName}>
                  christopher tso- chicago
                  {' '}
                 - 60632
                 </span>  
                 <br />
-                <div className="address">
+                <div className={deliverModal.address}>
                   <span >Default address</span>
                 </div>
               </span>
             </div>
-            <span className="addressBook">Manage address book</span>
+            <span className={deliverModal.addressBook}>Manage address book</span>
             <br />
-            <p className="UsZip">or enter a US zip code</p>
-            <input type="text" className="textInput" /> 
+            <p className={deliverModal.UsZip}>or enter a US zip code</p>
+            <input type="text" className={deliverModal.textInput} /> 
             {' '}
-            <input type="submit" value="Apply" className="textSubmit" />
-            <p className="or">or</p>
-            <select className="options">
+            <input type="submit" value="Apply" className={deliverModal.textSubmit} />
+            <p className={deliverModal.or}>or</p>
+            <select className={deliverModal.options}>
               <option>Ship outside the US</option>
             </select>
           </div>
-          <div className="delivery-footer">
-            <button type="button" className="done">Done</button>
+          <div className={deliverModal.deliveryFooter}>
+            <button type="button" className={deliverModal.done}>Done</button>
           </div>
         </div>
-        <div className="deliverToZipCode">
-          <div className="locator">
-            <img className="locatorimage" src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/Location.png" alt="locator" />
+        <div className={deliverModal.deliverToZipCode}>
+          <div className={deliverModal.locator}>
+            <img className={deliverModal.locatorimage} src="https://s3.us-east-2.amazonaws.com/chrisfakephotos/Location.png" alt="locator" />
           </div>
-          <div className="zipCodeText">
-            <span className="zipCode" onClick={this.showModal}>
+          <div className={deliverModal.zipCodeText}>
+            <span className={deliverModal.zipCode} onClick={this.showModal}>
               {' '}
               {'Deliver to Chicago 60632'}
             </span>
